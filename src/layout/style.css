@@ -1,0 +1,124 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.left {
+    background-color: red;
+    height: 100%;
+}
+
+.main {
+    background-color: green;
+    height: 100%;
+}
+
+.right {
+    background-color: yellow;
+    height: 100%;
+}
+
+/* float + margin*/
+.main-method1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-method1 {
+    width: 100px;
+    float: left;
+}
+
+
+.right-method1 {
+    width: 100px;
+    float: right;
+}
+
+/* posion + margin*/
+.main-method2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-method2 {
+    position: absolute;
+    top: 223px;
+    /*上面元素3个1px边框*/
+    left: 1px;
+    width: 100px;
+    height: 200px;
+}
+
+
+.right-method2 {
+    position: absolute;
+    /*上面元素3个1px边框*/
+    top: 223px;
+    right: 1px;
+    width: 100px;
+    height: 200px;
+}
+
+/*圣杯布局（float + 负margin + padding + position）*/
+.main-method3 {
+    width: 100%;
+    float: left;
+}
+
+.left-method3 {
+    float: left;
+    width: 100px;
+    height: 200px;
+    margin-left: -100%;
+    position: relative;
+    left: -100px;
+}
+
+
+.right-method3 {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin-left: -150px;
+    position: relative;
+    right: -150px;
+}
+
+.container-hasPadding {
+    width: calc(100% - 250px);
+    padding: 0 150px 0 100px;
+}
+
+/*双飞燕布局（float + 负margin+ position）*/
+.main-wrap {
+    float: left;     
+    width: 100%;
+}
+
+.main-method4 {
+    margin: 0 15px 0 100px;
+}
+
+.left-method4 {
+    float: left;
+    width: 100px;
+    height: 200px;
+    margin-left: -100%;
+}
+
+
+.right-method4 {
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin-left: -150px;
+}

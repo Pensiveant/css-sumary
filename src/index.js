@@ -1,4 +1,4 @@
-require("./layout-middle/index");
+require("./layout/index");
 
 
 
