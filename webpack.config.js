@@ -11,7 +11,7 @@ module.exports = {
     },
     module: {
         rules: [{
-                test: /\.scss$/,
+                test: /\.css$/,
                 use: [
                     "style-loader",
                     "css-loader"
@@ -22,8 +22,8 @@ module.exports = {
     plugins:[
         new CleanWepackPlugin(["dist"]),
         new HtmlWebpackPlugin({
-            title:"es5 study",
-            template:"./src/index.html"
+            title:"css study",
+            template:"./src/layout-middle/index.html"
         })
     ],
     devtool:"inline-source-map",

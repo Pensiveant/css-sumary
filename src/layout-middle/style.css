@@ -1,0 +1,47 @@
+/*水平居中*/
+.midleLayout {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+}
+
+/*行内元素*/
+div.text-algin-center {
+    text-align: center;
+}
+
+.midleLayout-child {
+    background-color: blue;
+}
+
+
+/*块状定宽*/
+.midleLayout-child1 {
+    height: 100%;
+    width: 200px;
+    margin: auto;
+    background-color: blue;
+}
+
+/*块状不定宽*/
+.disply-inline {
+    display: inline;
+}
+
+.midleLayout-child2 {
+    height: 100%;
+    background-color: blue;
+}
+
+
+/*通用*/
+.display-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.midleLayout-child3 {
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+}
