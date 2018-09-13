@@ -1,0 +1,4 @@
+#编译后的文档
+/dist/
+#npm包
+/node_modules/
