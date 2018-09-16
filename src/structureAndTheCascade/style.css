@@ -1,0 +1,24 @@
+/*特殊性*/
+div {
+    width: 100%;
+    border: 1px solid red;
+    height: 200px;
+}
+
+div.number1 {
+    background-color: black !important;
+}
+
+body div.number1 {
+    background-color: green !important;
+}
+
+
+/*继承性*/
+* {
+    color: red;
+}
+
+h1#page-title {
+    color: black;
+}

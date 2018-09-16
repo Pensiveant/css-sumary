@@ -23,7 +23,7 @@ module.exports = {
         new CleanWepackPlugin(["dist"]),
         new HtmlWebpackPlugin({
             title:"css study",
-            template:"./src/layout/index.html"
+            template:"./src/structureAndTheCascade/index.html"
         })
     ],
     devtool:"inline-source-map",
