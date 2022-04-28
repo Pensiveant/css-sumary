@@ -4,7 +4,7 @@ const HtmlWebpackPlugin=require("html-webpack-plugin");
 
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src//index.js",
     output: {
         filename:"bundle.js",
         path:path.resolve(__dirname,"dist")
@@ -23,7 +23,7 @@ module.exports = {
         new CleanWepackPlugin(["dist"]),
         new HtmlWebpackPlugin({
             title:"css study",
-            template:"./src/structureAndTheCascade/index.html"
+            template:"./src/CollapsingMargins/index.html"
         })
     ],
     devtool:"inline-source-map",
@@ -31,8 +31,5 @@ module.exports = {
         contentBase: './dist'
     },
     mode:"development"
-
-
-
 
 }
